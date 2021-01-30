@@ -106,14 +106,6 @@ npm run build
 - Serves fonts from same origin.
 - Makes fonts `display:optional`.
 
-#### Analytics
-
-- Supports locally serving Google Analytics's JS and proxying it's hit requests to a Netlify proxy (other proxies could be easily added).
-- Supports sending [Core Web Vitals](https://web.dev/vitals/) metrics to Google Analytics as [events](https://github.com/GoogleChrome/web-vitals#send-the-results-to-google-analytics).
-- Support for noscript hit requests.
-- Avoids blocking onload on analytics requests.
-- To turn this on, specify `googleAnalyticsId` in `metadata.json`.
-
 ### DX features
 
 - Uses 🚨 as favicon during local development.

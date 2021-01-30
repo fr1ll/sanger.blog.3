@@ -1,7 +1,30 @@
 /* Color customization */
 :root {
-  --primary: #f9c412;
-  --primary-dark: #e7bf60;
+  --grey-100: #F0ECF0;
+  --grey-200: #D9D5D8;
+  --grey-300: #C6BEC5;
+  --grey-400: #A9A5A9;
+  --grey-500: #858084;
+  --grey-600: #6C696C;
+  --grey-700: #545054;
+  --grey-800: #2F2E30;
+  --grey-900: #181919;
+  --primary-100: #fbd0c6;
+  --primary-200: #f8a996;
+  --primary-300: #FF8262;
+  --primary-400: #FD6843;
+  --primary-500: #F15129;
+  --primary-600: #E24118;
+  --primary-700: #ae3213;
+  --secondary-300: #4BB889;
+  --secondary-500: #00A056;
+  --tertiary-300: #00CBED;
+  --tertiary-500: #008D99;
+  --warn-300: #C72BCB;
+  --warn-500: #C73882;
+  /* previous values */
+  --primary: var(--primary-300);
+  --primary-dark: var(--primary-700);
 }
 
 .test-dead-code-elimination-sentinel {
@@ -70,7 +93,7 @@ share-widget button:active {
 }
 
 dialog {
-  background-color: #8dff80;
+  background-color: var(--secondary-300);
   position: fixed;
   opacity: 0.9;
   z-index: 1000;
@@ -762,14 +785,14 @@ th {
 }
 td,
 th {
-  border-bottom: 1px solid #595959;
+  border-bottom: 1px solid var(--grey-500);
   overflow: auto;
   padding: 0.75em;
   text-align: left;
   vertical-align: top;
 }
 thead th {
-  border-bottom: 1px solid #f9c412;
+  border-bottom: 1px solid var(--secondary-500);
 }
 table {
   display: table;
@@ -802,7 +825,7 @@ kbd {
   color: #7ec699;
 }
 mark {
-  background: #f9c412;
+  background: var(--secondary-300);
   padding: 0 0.3em;
 }
 h1,
@@ -819,20 +842,20 @@ h6 {
   font-style: italic;
 }
 a {
-  color: #f9c412;
+  color: -var(secondary-300);
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
 }
 small {
-  color: #ccc;
+  color: var(--grey-200);
 }
 hr {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--grey-100);
 }
 figcaption {
-  color: #ccc;
+  color: var(--grey-200);
   margin-top: 0.75em;
   font-size: 80%;
 }
@@ -863,7 +886,7 @@ html {
 }
 form {
   padding: 1.5em 1.5em 0;
-  border: 0.2rem solid #202020;
+  border: 0.2rem solid var(--grey-800);
   margin-bottom: 1.5em;
 }
 form small {
@@ -929,8 +952,8 @@ form > :not(fieldset) {
 button,
 input[type="reset"],
 input[type="submit"] {
-  background: #f2f2f2;
-  color: #191919;
+  background: var(--grey-100);
+  color: var(--grey-900);
   cursor: pointer;
   display: inline-block;
   padding: 0.75em 1.5em;
@@ -940,26 +963,26 @@ input[type="submit"] {
 button:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background: #d9d9d9;
+  background: var(--grey-200);
   color: #000;
 }
 button[disabled],
 input[type="reset"][disabled],
 input[type="submit"][disabled] {
-  background: #e6e6e6;
-  color: #404040;
+  background: var(--grey-200);
+  color: var(--grey-500);
   cursor: not-allowed;
 }
 button:not([disabled]),
 button[type="submit"],
 input[type="submit"] {
-  background: #f9c412;
-  color: #181818;
+  background: var(--secondary-300);
+  color: var(--grey-900);
 }
 button:not([disabled]):hover,
 button[type="submit"]:hover,
 input[type="submit"]:hover {
-  background: #ba9005;
+  background: var(--primary-600);
   color: #000;
 }
 input[type="color"],
@@ -981,7 +1004,7 @@ input[type="url"],
 input[type="week"],
 select,
 textarea {
-  border: 1px solid #595959;
+  border: 1px solid var(--grey-500);
   padding: 0.75em;
 }
 input[type="checkbox"],
@@ -1006,8 +1029,8 @@ img {
 }
 body {
   font-family: var(--font-family);
-  background: #181818;
-  color: #eee;
+  background: var(--grey-900);
+  color: var(--grey-100);
 }
 section {
   margin-left: auto;
@@ -1025,14 +1048,14 @@ header label {
   padding: 0.75em 0;
   margin: 0 1.5em;
   text-align: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--grey-200);
 }
 #menu-toggle:checked ~ a:last-of-type {
   padding-bottom: 0;
   border: 0;
 }
 #menu-toggle:checked ~ label {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid var(--grey-100);
   padding-bottom: 0.75em;
 }
 #menu-toggle:not(:checked) ~ a {
@@ -1057,7 +1080,7 @@ header nav {
   left: 0;
   width: 100vw;
   padding: 0.375em 1.5em;
-  background: hsla(0, 0%, 100%, 0.9);
+  background: hsla(0, 0%, 92%, 0.9);
   font-weight: 200;
   text-align: right;
 }
@@ -1072,7 +1095,7 @@ header nav a {
   font-weight: 700;
   text-decoration: none;
   font-family: var(--font-family);
-  color: #181818;
+  color: #181919;
   margin-left: 1.5em;
 }
 header nav a:first-of-type {
@@ -1091,11 +1114,11 @@ header nav label {
 main {
   max-width: 70rem;
   margin: 0 auto;
-  border-top: 0.5px solid #ccc;
+  border-top: 0.5px solid var(--grey-200);
 }
 footer {
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+  color: var(--grey-200);
   padding: 3em;
   text-align: center;
 }
@@ -1137,17 +1160,17 @@ dd {
   margin-left: 2.25em;
 }
 dd + dt {
-  border-top: 1px solid #f9c412;
+  border-top: 1px solid var(--tertiary-300);
 }
 blockquote {
-  border-left: 1px solid #f9c412;
+  border-left: 1px solid var(--tertiary-300);
   padding: 0 1.5em;
   margin: 1.5em 0 1.5em 1.5em;
 }
 blockquote footer {
   background: none;
   display: block;
-  color: #ccc;
+  color: var(--grey-200);
   padding: 0.75em 0;
   font-size: 90%;
   text-align: start;
@@ -1164,7 +1187,7 @@ figure img {
 }
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #ccc;
+  color: var(--grey-200);
   background: none;
   font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
   text-align: left;
@@ -1188,7 +1211,7 @@ pre[class*="language-"] {
 }
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #2d2d2d;
+  background: var(--grey-800);
 }
 :not(pre) > code[class*="language-"] {
   padding: 0.1em;
@@ -1200,16 +1223,16 @@ pre[class*="language-"] {
 .token.comment,
 .token.doctype,
 .token.prolog {
-  color: #999;
+  color: var(--grey-500);
 }
 .token.punctuation {
-  color: #ccc;
+  color: var(--grey-300);
 }
 .token.attr-name,
 .token.deleted,
 .token.namespace,
 .token.tag {
-  color: #e2777a;
+  color: var(--warn-300);
 }
 .token.function-name {
   color: #6196cc;
@@ -1217,7 +1240,7 @@ pre[class*="language-"] {
 .token.boolean,
 .token.function,
 .token.number {
-  color: #f08d49;
+  color: #4BB889;
 }
 .token.class-name,
 .token.constant,

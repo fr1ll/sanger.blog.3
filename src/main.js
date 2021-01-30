@@ -93,26 +93,6 @@ document.documentElement.addEventListener("touchstart", prefetch, {
   passive: true,
 });
 
-const GA_ID = document.documentElement.getAttribute("ga-id");
-window.ga =
-  window.ga ||
-  function () {
-    if (!GA_ID) {
-      return;
-    }
-    (ga.q = ga.q || []).push(arguments);
-  };
-ga.l = +new Date();
-ga("create", GA_ID, "auto");
-ga("set", "transport", "beacon");
-var timeout = setTimeout(
-  (onload = function () {
-    clearTimeout(timeout);
-    ga("send", "pageview");
-  }),
-  1000
-);
-
 var ref = +new Date();
 function ping(event) {
   var now = +new Date();
@@ -150,17 +130,6 @@ const dynamicScriptInject = (src) => {
 // Script web-vitals.js will be injected dynamically if user opts-in to sending CWV data.
 const sendWebVitals = document.currentScript.getAttribute("data-cwv-src");
 
-if (/web-vitals.js/.test(sendWebVitals)) {
-  dynamicScriptInject(`${window.location.origin}/js/web-vitals.js`)
-  .then(() => {
-    webVitals.getCLS(sendToGoogleAnalytics);
-    webVitals.getFID(sendToGoogleAnalytics);
-    webVitals.getLCP(sendToGoogleAnalytics);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-}
 
 addEventListener(
   "click",
