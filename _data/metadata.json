@@ -4,7 +4,6 @@
   "domain": "sanger.blog",
   "description": "Blog for Will Sanger. Coding geophysicst based in Houston, hailing from PNWUSA.",
   "genre": "Insert a schema.org genre",
-  "sendWebVitals": false,
   "feed": {
     "subtitle": "Will Sanger's blog.",
     "filename": "feed.xml",

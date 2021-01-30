@@ -127,9 +127,6 @@ const dynamicScriptInject = (src) => {
   });
 };
 
-// Script web-vitals.js will be injected dynamically if user opts-in to sending CWV data.
-const sendWebVitals = document.currentScript.getAttribute("data-cwv-src");
-
 
 addEventListener(
   "click",
