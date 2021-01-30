@@ -60,13 +60,13 @@ describe("check build output for a generic post", () => {
       expect(css).to.not.match(/test-dead-code-elimination-sentinel/);
     });
 
-    it("should have script elements", () => {
-      const scripts = doc.querySelectorAll("script[src]");
-      expect(scripts).to.have.length(1); // NOTE: update this when adding more <script>
-      expect(scripts[0].getAttribute("src")).to.match(
-        /^\/js\/min\.js\?hash=\w+/
-      );
-    });
+    // it("should have script elements", () => {
+    //   const scripts = doc.querySelectorAll("script[src]");
+    //   expect(scripts).to.have.length(1); // NOTE: update this when adding more <script>
+    //   expect(scripts[0].getAttribute("src")).to.match(
+    //     /^\/js\/min\.js\?hash=\w+/
+    //   );
+    // });
 
     it("should have a good CSP", () => {
       const csp = select(
