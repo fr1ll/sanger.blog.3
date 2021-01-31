@@ -8,6 +8,8 @@ layout: layouts/post.njk
 image: "/img/2021/01/two-subarus-completed.JPG"
 
 ---
+![Two Subarus -- picture of cocktail](/img/2021/01/two-subarus-completed.JPG "Two Subarus")
+
 We had a "cocktail off" cocktail competition to commemorate the double junction of Subaru and Jupiter. My entrant was a [Kyoto Sour](https://www.liquor.com/recipes/kyoto-sour/ "Kyoto Sour recipe at liquor.com") modified by switching the hot sauce and a couple other details. Here's how to make it!
 
 ## Ingredients
@@ -30,7 +32,7 @@ Dash in hot sauce, then use something blunt to smash it all up. Smash it pretty 
 
 ## Add rest of ingredients and shake
 
-Measure in sake, agave nectar, and lemon juice. Fresh lemon is much nicer than old fridge-born(e) lemon. 
+Measure in sake, agave nectar, and lemon juice. Fresh lemon is much nicer than old fridge-born(e) lemon.
 
 ### Crush up the ice
 
