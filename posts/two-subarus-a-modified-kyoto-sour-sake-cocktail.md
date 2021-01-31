@@ -4,7 +4,7 @@ description: Modified Kyoto Sour to commemorate the double junction
 date: 2021-01-30T00:00:00-06:00
 tags:
 - recipe
-layout: post.njk
+layout: layouts/post.njk
 image: ''
 
 ---
