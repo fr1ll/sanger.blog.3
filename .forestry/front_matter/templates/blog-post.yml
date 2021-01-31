@@ -20,3 +20,5 @@ fields:
 - type: file
   name: image
   label: image
+pages:
+- posts/two-subarus-a-modified-kyoto-sour-sake-cocktail.md
