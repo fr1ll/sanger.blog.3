@@ -4,17 +4,15 @@
   "domain": "sanger.blog",
   "description": "Blog for Will Sanger. Coding geophysicst based in Houston, hailing from PNWUSA.",
   "genre": "Insert a schema.org genre",
-  "googleAnalyticsId": "GA ID. Update me",
-  "sendWebVitals": false,
   "feed": {
     "subtitle": "Will Sanger's blog.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://sanger.blog"
+    "id": "https://update-me.com"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://sanger.blog/feed/feed.json"
+    "url": "https://update-me.com/feed/feed.json"
   },
   "author": {
     "name": "Will Sanger",
