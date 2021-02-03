@@ -168,6 +168,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("_headers");
+  eleventyConfig.addPassthroughCopy("./js/");
 
   // We need to rebuild upon JS change to update the CSP.
   eleventyConfig.addWatchTarget("./js/");
