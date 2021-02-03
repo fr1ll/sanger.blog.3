@@ -99,12 +99,7 @@ function ping(event) {
   if (now - ref < 1000) {
     return;
   }
-  ga("send", {
-    hitType: "event",
-    eventCategory: "page",
-    eventAction: event.type,
-    eventLabel: Math.round((now - ref) / 1000),
-  });
+//Removed a ga() (Google Analytics) function
   ref = now;
 }
 addEventListener("pagehide", ping);
@@ -135,11 +130,7 @@ addEventListener(
     if (!button) {
       return;
     }
-    ga("send", {
-      hitType: "event",
-      eventCategory: "button",
-      eventAction: button.getAttribute("aria-label") || button.textContent,
-    });
+//Removed a ga() (Google Analytics) function
   },
   true
 );
@@ -153,11 +144,7 @@ addEventListener(
       return;
     }
     selectionTimeout = setTimeout(function () {
-      ga("send", {
-        hitType: "event",
-        eventCategory: "selection",
-        eventAction: text,
-      });
+//Removed a ga() (Google Analytics) function
     }, 2000);
   },
   true
