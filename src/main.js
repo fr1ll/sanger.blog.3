@@ -94,8 +94,19 @@ document.documentElement.addEventListener("touchstart", prefetch, {
 });
 
 var ref = +new Date();
-// fr1ll: I removed some ga() (Google Analytics) stuff here
-
+function ping(event) {
+  var now = +new Date();
+  if (now - ref < 1000) {
+    return;
+  }
+  ga("send", {
+    hitType: "event",
+    eventCategory: "page",
+    eventAction: event.type,
+    eventLabel: Math.round((now - ref) / 1000),
+  });
+  ref = now;
+}
 addEventListener("pagehide", ping);
 addEventListener("visibilitychange", ping);
 
@@ -116,7 +127,41 @@ const dynamicScriptInject = (src) => {
   });
 };
 
-// fr1ll: I removed some ga() (Google Analytics) stuff here
+
+addEventListener(
+  "click",
+  function (e) {
+    var button = e.target.closest("button");
+    if (!button) {
+      return;
+    }
+    ga("send", {
+      hitType: "event",
+      eventCategory: "button",
+      eventAction: button.getAttribute("aria-label") || button.textContent,
+    });
+  },
+  true
+);
+var selectionTimeout;
+addEventListener(
+  "selectionchange",
+  function () {
+    clearTimeout(selectionTimeout);
+    var text = String(document.getSelection()).trim();
+    if (text.split(/[\s\n\r]+/).length < 3) {
+      return;
+    }
+    selectionTimeout = setTimeout(function () {
+      ga("send", {
+        hitType: "event",
+        eventCategory: "selection",
+        eventAction: text,
+      });
+    }, 2000);
+  },
+  true
+);
 
 if (window.ResizeObserver && document.querySelector("header nav #nav")) {
   var progress = document.getElementById("reading-progress");
