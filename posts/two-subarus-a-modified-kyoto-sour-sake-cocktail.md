@@ -43,7 +43,7 @@ Use a big spoon to crush up the ice in your hand. Add so the cocktail mixer has 
 Your goal is to get everything really nice and cold. "Don't unwrap or it's in your lap!"
 
 <video autoplay loop muted playsinline>
-  <source src="/img/2021/02/shake-subaru.mp4" title="Shake the subarus" alt="Hand shaking cocktail shaker">
+  <source src="/img/2021/02/shake-subaru.mp4" title="Shake the subarus" alt="Hand shaking cocktail shaker" type="video/mp4">
  </video>
 
 
