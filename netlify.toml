@@ -12,3 +12,7 @@
     [headers.values]
       Content-Type = "image/avif"
       Content-Disposition = "inline"
+
+# If skip_processing = true, all other settings are ignored
+[build.processing]
+  skip_processing = true
