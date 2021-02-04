@@ -42,10 +42,10 @@ Use a big spoon to crush up the ice in your hand. Add so the cocktail mixer has 
 
 Your goal is to get everything really nice and cold. "Don't unwrap or it's in your lap!"
 
-<video autoplay loop muted playsinline> <source src="/img/2021/02/two-subarus-howto-lite.mp4" title="Making a Two Subarus" alt="Steps to make the Two Subarus" type="video/mp4"> </video>
-
 ## Pour and garnish
 
 Pour as much as you can get out into your glass.
 
 Rinse, then slap the mint to get some life into it. Garnish with the mint and grapefruit slice.
+
+<video autoplay loop muted playsinline> <source src="/img/2021/02/two-subarus-howto-lite.mp4" title="Making a Two Subarus" alt="Steps to make the Two Subarus" type="video/mp4"> </video>
