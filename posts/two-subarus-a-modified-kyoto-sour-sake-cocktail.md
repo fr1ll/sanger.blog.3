@@ -22,7 +22,7 @@ We had a "cocktail off" cocktail competition to commemorate the double junction 
 * Crushed ice
 * Garnish with grapefruit slice and fresh mint
 
-<video autoplay loop muted playsinline> <source src="/img/2021/02/two-subarus-howto-lite.mp4" title="Making a Two Subarus" alt="Steps to make the Two Subarus" type="video/mp4"> </video>
+<video autoplay loop muted playsinline width="100%"> <source src="/img/2021/02/two-subarus-howto-lite.mp4" title="Making a Two Subarus" alt="Steps to make the Two Subarus" type="video/mp4"> </video>
 
 ## Smash the grapefruit to the hot sauce
 
