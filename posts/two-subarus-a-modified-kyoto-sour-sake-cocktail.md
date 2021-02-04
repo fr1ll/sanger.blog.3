@@ -42,10 +42,12 @@ Use a big spoon to crush up the ice in your hand. Add so the cocktail mixer has 
 
 Your goal is to get everything really nice and cold. "Don't unwrap or it's in your lap!"
 
-## ![A hand shaking a cocktail shaker with Two Subarus ingredients](/img/2021/01/shake-two-subies.gif "Shake it!")
+## 
 
 ## Pour and garnish
 
 Pour as much as you can get out into your glass.
 
 Rinse, then slap the mint to get some life into it. Garnish with the mint and grapefruit slice.
+
+[shake-subaru.mp4](/img/2021/02/shake-subaru.mp4 "shake-subaru.mp4")
