@@ -10,7 +10,7 @@ image: "/img/2021/01/two-subarus-completed.JPG"
 ---
 ![Two Subarus -- picture of cocktail](/img/2021/01/two-subarus-completed.JPG "Two Subarus")
 
-We had a "cocktail off" cocktail competition to commemorate the double junction of Subaru and Jupiter. My entrant was a [Kyoto Sour](https://www.liquor.com/recipes/kyoto-sour/ "Kyoto Sour recipe at liquor.com") modified by switching the hot sauce and a couple other details. Here's how to make it!
+We had a "cocktail off" 🐓cocktail competition to commemorate the double junction of Saturn and Jupiter. The winner was a variation on a [Kyoto Sour](https://www.liquor.com/recipes/kyoto-sour/ "Kyoto Sour recipe at liquor.com"), modified by changing the hot sauce and a couple other details. Here's how to make it!
 
 ## Ingredients
 
