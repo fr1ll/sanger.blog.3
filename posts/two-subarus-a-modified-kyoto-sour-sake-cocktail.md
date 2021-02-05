@@ -24,6 +24,8 @@ We had a "cocktail off" 🐓cocktail competition to commemorate the double junct
 
 <video autoplay loop muted playsinline width="100%"> <source src="/img/2021/02/two-subarus-howto-lite.mp4" title="Making a Two Subarus" alt="Steps to make the Two Subarus" type="video/mp4"> </video>
 
+![Test markdown-it-html5](/img/2021/02/two-subarus-howto-lite.mp4 "Test Markdown-it-html5")
+
 ## Smash the grapefruit to the hot sauce
 
 First make sure everything is clean and ready to go.

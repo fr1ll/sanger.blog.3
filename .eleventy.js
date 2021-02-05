@@ -52,6 +52,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItHtml5Media = require("markdown-it-html5-media");
 const localImages = require("./third_party/eleventy-plugin-local-images/.eleventy.js");
 const CleanCSS = require("clean-css");
 
@@ -187,16 +188,11 @@ module.exports = function (eleventyConfig) {
     permalink: true,
     permalinkClass: "direct-link",
     permalinkSymbol: "#",
-  });
+  })
+  // .use(markdownItHtml5Media, {
+  //   videoAttrs: 'autoplay="" loop="" muted="" playsinline="" width="100%"',
+  // });
   eleventyConfig.setLibrary("md", markdownLibrary);
-
-  //html5-media plugin for video
-  // Destructuring assignment; we also export UI messages & media type detection
-  const { html5Media } = require('markdown-it-html5-media');
-  md.use(html5Media, {
-    videoAttrs: 'autoplay="" loop="" muted="" playsinline="" width="100%"'
-  });
-  console.log(md.render('![text](video.mp4)'));
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
