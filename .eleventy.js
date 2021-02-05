@@ -188,10 +188,9 @@ module.exports = function (eleventyConfig) {
     permalink: true,
     permalinkClass: "direct-link",
     permalinkSymbol: "#",
-  })
-  // .use(markdownItHtml5Media, {
-  //   videoAttrs: 'autoplay="" loop="" muted="" playsinline="" width="100%"',
-  // });
+  }, markdownItHtml5Media, {
+    videoAttrs: 'autoplay="" loop="" muted="" playsinline="" width="100%"',
+  });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Browsersync Overrides
