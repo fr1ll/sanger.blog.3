@@ -52,7 +52,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const markdownItHtml5Media = require("markdown-it-html5-media");
+const { html5Media } = require("markdown-it-html5-media");
 const localImages = require("./third_party/eleventy-plugin-local-images/.eleventy.js");
 const CleanCSS = require("clean-css");
 
@@ -184,11 +184,14 @@ module.exports = function (eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true,
-  }).use(markdownItAnchor, {
+    typographer: true,
+  })
+  .use(markdownItAnchor, {
     permalink: true,
     permalinkClass: "direct-link",
     permalinkSymbol: "#",
-  }, markdownItHtml5Media, {
+  })
+  .use(html5Media, {
     videoAttrs: 'autoplay="" loop="" muted="" playsinline="" width="100%"',
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
