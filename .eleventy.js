@@ -190,6 +190,14 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
+  //html5-media plugin for video
+  // Destructuring assignment; we also export UI messages & media type detection
+  const { html5Media } = require('markdown-it-html5-media');
+  md.use(html5Media, {
+    videoAttrs: 'autoplay="" loop="" muted="" playsinline="" width="100%"'
+  });
+  console.log(md.render('![text](video.mp4)'));
+
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
